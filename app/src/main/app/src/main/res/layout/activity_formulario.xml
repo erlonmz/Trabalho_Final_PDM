@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity">
+
+    <EditText
+        android:id="@+id/etcalorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Calorias"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="400dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faça a busca aqui, deixe todos os campos nulos para retornar a lista completa de alimentos"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etProteinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Proteinas"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="131dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etCarboidrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Carboidrato"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="193dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etSodio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Sodio"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="254dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etVitaminas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Vitaminas"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="318dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

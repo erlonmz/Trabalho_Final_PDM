@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BuscaActivity">
+    tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.TrabalhoFinal.AppBarOverlay"
-        tools:ignore="MissingConstraints">
+        android:theme="@style/Theme.TrabalhoFinal.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar2"
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.TrabalhoFinal.PopupOverlay"
-            tools:ignore="MissingConstraints" />
+            app:popupTheme="@style/Theme.TrabalhoFinal.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
-        android:id="@+id/include"
         layout="@layout/content_main"
-        android:layout_height="match_parent"
+        android:layout_height="449dp"
         tools:ignore="IncludeLayoutParam" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -33,14 +30,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#00f"
-        android:clickable="true"
         android:tint="#fff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add"
-        tools:ignore="MissingConstraints" />
+        app:srcCompat="@android:drawable/ic_input_add" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
